@@ -69,6 +69,53 @@
         "styles": ["apps/poll-app/src/styles.css"],
         "scripts": []
       }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "apps/poll-app/.storybook",
+        "browserTarget": "poll-app:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/poll-app",
+        "configDir": "apps/poll-app/.storybook",
+        "browserTarget": "poll-app:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "test-storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "test-storybook -c apps/poll-app/.storybook --url=http://localhost:4400"
+      }
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "poll-app:build-storybook",
+        "staticFilePath": "dist/storybook/poll-app"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "poll-app:build-storybook:ci"
+        }
+      }
     }
   }
 }
