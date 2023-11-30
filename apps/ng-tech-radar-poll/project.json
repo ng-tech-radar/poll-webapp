@@ -1,0 +1,80 @@
+{
+  "name": "ng-tech-radar-poll",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "generators": {},
+  "sourceRoot": "apps/ng-tech-radar-poll/src",
+  "prefix": "tr",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "options": {
+        "outputPath": "dist/apps/ng-tech-radar-poll",
+        "index": "apps/ng-tech-radar-poll/src/index.html",
+        "browser": "apps/ng-tech-radar-poll/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/ng-tech-radar-poll/tsconfig.app.json",
+        "assets": [
+          "apps/ng-tech-radar-poll/src/favicon.ico",
+          "apps/ng-tech-radar-poll/src/assets"
+        ],
+        "styles": ["apps/ng-tech-radar-poll/src/styles.css"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "ng-tech-radar-poll:build:production"
+        },
+        "development": {
+          "buildTarget": "ng-tech-radar-poll:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "ng-tech-radar-poll:build"
+      }
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "polyfills": ["zone.js", "zone.js/testing"],
+        "tsConfig": "apps/ng-tech-radar-poll/tsconfig.spec.json",
+        "assets": [
+          "apps/ng-tech-radar-poll/src/favicon.ico",
+          "apps/ng-tech-radar-poll/src/assets"
+        ],
+        "styles": ["apps/ng-tech-radar-poll/src/styles.css"],
+        "scripts": []
+      }
+    }
+  }
+}
