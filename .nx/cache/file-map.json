@@ -105,7 +105,7 @@
       },
       {
         "file": "nx.json",
-        "hash": "14141922378133351142"
+        "hash": "2177496493609345091"
       },
       {
         "file": "package-lock.json",
@@ -113,7 +113,7 @@
       },
       {
         "file": "package.json",
-        "hash": "5817614653868605089"
+        "hash": "8281176747055753605"
       },
       {
         "file": "tools/generators/.gitkeep",
@@ -129,28 +129,28 @@
       }
     ],
     "projectFileMap": {
-      "ng-tech-radar-poll": [
+      "poll-app": [
         {
-          "file": "apps/ng-tech-radar-poll/project.json",
-          "hash": "5017794645820714466"
+          "file": "apps/poll-app/project.json",
+          "hash": "10861717496137744721"
         },
         {
-          "file": "apps/ng-tech-radar-poll/src/app/app.component.css",
+          "file": "apps/poll-app/src/app/app.component.css",
           "hash": "3244421341483603138"
         },
         {
-          "file": "apps/ng-tech-radar-poll/src/app/app.component.html",
+          "file": "apps/poll-app/src/app/app.component.html",
           "hash": "9684522676987792322"
         },
         {
-          "file": "apps/ng-tech-radar-poll/src/app/app.component.spec.ts",
+          "file": "apps/poll-app/src/app/app.component.spec.ts",
           "hash": "11457162512060477407",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
-          "file": "apps/ng-tech-radar-poll/src/app/app.component.ts",
+          "file": "apps/poll-app/src/app/app.component.ts",
           "hash": "4919819061270773063",
           "deps": [
             "npm:@angular/core",
@@ -159,7 +159,7 @@
           ]
         },
         {
-          "file": "apps/ng-tech-radar-poll/src/app/app.config.ts",
+          "file": "apps/poll-app/src/app/app.config.ts",
           "hash": "11713316320723186868",
           "deps": [
             "npm:@angular/core",
@@ -167,41 +167,41 @@
           ]
         },
         {
-          "file": "apps/ng-tech-radar-poll/src/app/app.routes.ts",
+          "file": "apps/poll-app/src/app/app.routes.ts",
           "hash": "12397496131277534773",
           "deps": [
             "npm:@angular/router"
           ]
         },
         {
-          "file": "apps/ng-tech-radar-poll/src/assets/.gitkeep",
+          "file": "apps/poll-app/src/assets/.gitkeep",
           "hash": "3244421341483603138"
         },
         {
-          "file": "apps/ng-tech-radar-poll/src/favicon.ico",
+          "file": "apps/poll-app/src/favicon.ico",
           "hash": "3988961587069885523"
         },
         {
-          "file": "apps/ng-tech-radar-poll/src/index.html",
+          "file": "apps/poll-app/src/index.html",
           "hash": "8533303514564235971"
         },
         {
-          "file": "apps/ng-tech-radar-poll/src/main.ts",
+          "file": "apps/poll-app/src/main.ts",
           "hash": "16635586463787978962",
           "deps": [
             "npm:@angular/platform-browser"
           ]
         },
         {
-          "file": "apps/ng-tech-radar-poll/src/styles.css",
+          "file": "apps/poll-app/src/styles.css",
           "hash": "5195668842064076916"
         },
         {
-          "file": "apps/ng-tech-radar-poll/tsconfig.app.json",
+          "file": "apps/poll-app/tsconfig.app.json",
           "hash": "2381145790002888757"
         },
         {
-          "file": "apps/ng-tech-radar-poll/tsconfig.spec.json",
+          "file": "apps/poll-app/tsconfig.spec.json",
           "hash": "17700927949365452100"
         }
       ]

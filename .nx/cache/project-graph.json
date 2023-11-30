@@ -1,15 +1,15 @@
 {
   "nodes": {
-    "ng-tech-radar-poll": {
-      "name": "ng-tech-radar-poll",
+    "poll-app": {
+      "name": "poll-app",
       "type": "app",
       "data": {
-        "root": "apps/ng-tech-radar-poll",
-        "name": "ng-tech-radar-poll",
+        "root": "apps/poll-app",
+        "name": "poll-app",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "projectType": "application",
         "generators": {},
-        "sourceRoot": "apps/ng-tech-radar-poll/src",
+        "sourceRoot": "apps/poll-app/src",
         "prefix": "tr",
         "targets": {
           "build": {
@@ -23,19 +23,19 @@
             "cache": true,
             "executor": "@angular-devkit/build-angular:application",
             "options": {
-              "outputPath": "dist/apps/ng-tech-radar-poll",
-              "index": "apps/ng-tech-radar-poll/src/index.html",
-              "browser": "apps/ng-tech-radar-poll/src/main.ts",
+              "outputPath": "dist/apps/poll-app",
+              "index": "apps/poll-app/src/index.html",
+              "browser": "apps/poll-app/src/main.ts",
               "polyfills": [
                 "zone.js"
               ],
-              "tsConfig": "apps/ng-tech-radar-poll/tsconfig.app.json",
+              "tsConfig": "apps/poll-app/tsconfig.app.json",
               "assets": [
-                "apps/ng-tech-radar-poll/src/favicon.ico",
-                "apps/ng-tech-radar-poll/src/assets"
+                "apps/poll-app/src/favicon.ico",
+                "apps/poll-app/src/assets"
               ],
               "styles": [
-                "apps/ng-tech-radar-poll/src/styles.css"
+                "apps/poll-app/src/styles.css"
               ],
               "scripts": []
             },
@@ -67,10 +67,10 @@
             "executor": "@angular-devkit/build-angular:dev-server",
             "configurations": {
               "production": {
-                "buildTarget": "ng-tech-radar-poll:build:production"
+                "buildTarget": "poll-app:build:production"
               },
               "development": {
-                "buildTarget": "ng-tech-radar-poll:build:development"
+                "buildTarget": "poll-app:build:development"
               }
             },
             "defaultConfiguration": "development",
@@ -79,7 +79,7 @@
           "extract-i18n": {
             "executor": "@angular-devkit/build-angular:extract-i18n",
             "options": {
-              "buildTarget": "ng-tech-radar-poll:build"
+              "buildTarget": "poll-app:build"
             },
             "configurations": {}
           },
@@ -96,13 +96,13 @@
                 "zone.js",
                 "zone.js/testing"
               ],
-              "tsConfig": "apps/ng-tech-radar-poll/tsconfig.spec.json",
+              "tsConfig": "apps/poll-app/tsconfig.spec.json",
               "assets": [
-                "apps/ng-tech-radar-poll/src/favicon.ico",
-                "apps/ng-tech-radar-poll/src/assets"
+                "apps/poll-app/src/favicon.ico",
+                "apps/poll-app/src/assets"
               ],
               "styles": [
-                "apps/ng-tech-radar-poll/src/styles.css"
+                "apps/poll-app/src/styles.css"
               ],
               "scripts": []
             },
@@ -11025,24 +11025,24 @@
     }
   },
   "dependencies": {
-    "ng-tech-radar-poll": [
+    "poll-app": [
       {
-        "source": "ng-tech-radar-poll",
+        "source": "poll-app",
         "target": "npm:@angular/core",
         "type": "static"
       },
       {
-        "source": "ng-tech-radar-poll",
+        "source": "poll-app",
         "target": "npm:@angular/common",
         "type": "static"
       },
       {
-        "source": "ng-tech-radar-poll",
+        "source": "poll-app",
         "target": "npm:@angular/router",
         "type": "static"
       },
       {
-        "source": "ng-tech-radar-poll",
+        "source": "poll-app",
         "target": "npm:@angular/platform-browser",
         "type": "static"
       }

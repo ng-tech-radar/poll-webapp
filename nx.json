@@ -23,5 +23,10 @@
       "cache": true
     }
   },
-  "nxCloudAccessToken": "MjRkNTAyZTQtOTZiYy00NDJiLWI4ZjctZTRjNWFmNTkzY2MzfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MjRkNTAyZTQtOTZiYy00NDJiLWI4ZjctZTRjNWFmNTkzY2MzfHJlYWQtd3JpdGU=",
+  "generators": {
+    "@nx/workspace:move": {
+      "projectNameAndRootFormat": "as-provided"
+    }
+  }
 }
