@@ -1,5 +1,5 @@
 {
-  "name": "ng-tech-radar-poll",
+  "name": "poll-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
