@@ -15,7 +15,7 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/poll-app/tsconfig.app.json",
         "assets": ["apps/poll-app/src/favicon.ico", "apps/poll-app/src/assets"],
-        "styles": ["apps/poll-app/src/styles.css"],
+        "styles": ["libs/shared/ui/theme/styles/poll-styles.scss"],
         "scripts": []
       },
       "configurations": {
