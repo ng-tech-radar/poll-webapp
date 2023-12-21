@@ -1,0 +1,9 @@
+@use '@angular/material' as mat;
+@import 'palettes';
+
+:root {
+  --poll-dark-background: #{map-get($poll-dark-background, background)};
+  --poll-dark-foreground: #{map-get($poll-dark-foreground, text)};
+  --poll-light-background: #{map-get($poll-light-background, background)};
+  --poll-light-foreground: #{map-get($poll-light-foreground, text)};
+}

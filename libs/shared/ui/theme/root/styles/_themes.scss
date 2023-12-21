@@ -1,0 +1,22 @@
+@use '@angular/material' as mat;
+@import './palettes';
+
+$poll-light-theme: mat.define-light-theme((
+  color: (
+    primary: $poll-light-primary,
+    accent: $poll-light-accent,
+    warn: $poll-light-warn,
+  ),
+  background: $poll-light-background,
+  foreground: $poll-light-foreground,
+));
+
+$poll-dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $poll-dark-primary,
+    accent: $poll-dark-accent,
+    warn: $poll-dark-warn,
+  ),
+  background: $poll-dark-background,
+  foreground: $poll-dark-foreground,
+));
