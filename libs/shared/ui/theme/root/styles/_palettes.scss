@@ -1,0 +1,45 @@
+@use '@angular/material' as mat;
+
+$poll-dark-primary: mat.define-palette(mat.$orange-palette, 500, 300, 700);
+$poll-dark-accent: mat.define-palette(mat.$deep-orange-palette, 500, 300, 700);
+$poll-dark-warn: mat.define-palette(mat.$teal-palette, 500, 300, 700);
+$poll-dark-background: (
+  status-bar: mat.get-color-from-palette(mat.$grey-palette, 900),
+  app-bar: mat.get-color-from-palette(mat.$grey-palette, 800),
+  background: mat.get-color-from-palette(mat.$grey-palette, 900),
+  hover: mat.get-color-from-palette(mat.$grey-palette, 700),
+  card: mat.get-color-from-palette(mat.$grey-palette, 850),
+  dialog: mat.get-color-from-palette(mat.$grey-palette, 850),
+  disabled-button: mat.get-color-from-palette(mat.$grey-palette, 700),
+  raised-button: mat.get-color-from-palette(mat.$grey-palette, 800),
+  focused-button: mat.get-color-from-palette(mat.$grey-palette, 700),
+);
+$poll-dark-foreground: (
+  base: mat.get-color-from-palette(mat.$grey-palette, 50),
+  divider: mat.get-color-from-palette(mat.$grey-palette, 600),
+  disabled: mat.get-color-from-palette(mat.$grey-palette, 500),
+  hint-text: mat.get-color-from-palette(mat.$grey-palette, 500),
+  text: mat.get-color-from-palette(mat.$grey-palette, 50),
+);
+
+$poll-light-primary: mat.define-palette(mat.$orange-palette, 300);
+$poll-light-accent: mat.define-palette(mat.$deep-orange-palette, 300);
+$poll-light-warn: mat.define-palette(mat.$teal-palette, 400);
+$poll-light-background: (
+  status-bar: mat.get-color-from-palette(mat.$grey-palette, 200),
+  app-bar: mat.get-color-from-palette(mat.$grey-palette, 100),
+  background: mat.get-color-from-palette(mat.$grey-palette, 50),
+  hover: mat.get-color-from-palette(mat.$grey-palette, 300),
+  card: mat.get-color-from-palette(mat.$grey-palette, 100),
+  dialog: mat.get-color-from-palette(mat.$grey-palette, 100),
+  disabled-button: mat.get-color-from-palette(mat.$grey-palette, 300),
+  raised-button: mat.get-color-from-palette(mat.$grey-palette, 100),
+  focused-button: mat.get-color-from-palette(mat.$grey-palette, 300),
+);
+$poll-light-foreground: (
+  base: mat.get-color-from-palette(mat.$grey-palette, 800),
+  divider: mat.get-color-from-palette(mat.$grey-palette, 400),
+  disabled: mat.get-color-from-palette(mat.$grey-palette, 600),
+  hint-text: mat.get-color-from-palette(mat.$grey-palette, 600),
+  text: mat.get-color-from-palette(mat.$grey-palette, 800),
+);

@@ -1,0 +1,32 @@
+@use '@angular/material' as mat;
+@import 'themes';
+@import 'typographies';
+@import 'colors';
+
+@include mat.core();
+
+:root {
+  @include mat.all-component-typographies($poll-typography-config);
+}
+
+.dark-theme {
+  @include mat.all-component-themes($poll-dark-theme);
+
+  background-color: var(--poll-dark-background);
+  color: var(--poll-dark-foreground);
+}
+
+.light-theme {
+  @include mat.all-component-themes($poll-light-theme);
+
+  background-color: var(--poll-light-background);
+  color: var(--poll-light-foreground);
+}
+
+/** TODO (BW)
+  Place all the corners, shapes styles here like:
+
+  .custom-container .mat-dialog-container {
+    border-radius: 20px !important;
+   }
+ **/
