@@ -1,0 +1,75 @@
+<section class="landing__home">
+  <img
+    class="landing__home-banner"
+    ngSrc="../assets/welcome-banner.png"
+    alt="A lighthouse glowing in radar shape"
+    width="600"
+    height="600"
+    priority=""
+  />
+
+  <main class="landing__home-cta">
+    <h1 class="page-title">#ngTechRadar</h1>
+    <h2 class="page-subtitle">
+      We are the <span class="emphasized">angular lighthouse</span> for devs &
+      architects
+    </h2>
+
+    <div class="landing__home-cta-buttons">
+      <div class="landing__home-cta-button-wrapper">
+        <button
+          class="landing__home-cta-button"
+          mat-stroked-button
+          (click)="scrollTo(about)"
+        >
+          How it works
+        </button>
+        <button
+          class="landing__home-cta-button"
+          mat-raised-button
+          color="primary"
+          (click)="scrollTo(mailing)"
+        >
+          Contribute now
+        </button>
+      </div>
+    </div>
+  </main>
+</section>
+<section class="landing__about" #about>
+  <h2 class="page-title">How it <span class="emphasized">works</span></h2>
+  <div class="landing__about-split">
+    <img
+      class="landing__about-banner-img"
+      ngSrc="assets/radar-split.png"
+      width="720"
+      height="700"
+      alt="Typical tech radar interests split adjusted for Angular Tech Radar"
+    />
+    <!--  <span class="landing__about-dot" style="">State management</span>-->
+    <!--  <span class="landing__about-dot" style="">Angular pattern</span>-->
+    <!--  <span class="landing__about-dot" style="">SPA</span>-->
+    <!--  <span class="landing__about-dot" style="">Mobile</span>-->
+    <ul class="landing__about-list">
+      <li>
+        <mat-icon color="accent">interpreter_mode</mat-icon>
+        <span> You tell us about your project work </span>
+      </li>
+      <li>
+        <mat-icon color="accent">assignment_add</mat-icon>
+        <span>We collect & prepare the data</span>
+      </li>
+      <li>
+        <mat-icon color="accent">query_stats</mat-icon>
+        <span>Entire community = profit</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="landing__mailing" #mailing>
+  <h2 class="page-title">
+    Join <span class="emphasized">Angular Tech Radar</span>
+  </h2>
+  <sh-mailing></sh-mailing>
+</section>

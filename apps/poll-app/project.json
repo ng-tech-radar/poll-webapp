@@ -12,12 +12,28 @@
         "outputPath": "dist/apps/poll-app",
         "index": "apps/poll-app/src/index.html",
         "browser": "apps/poll-app/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/poll-app/tsconfig.app.json",
-        "assets": ["apps/poll-app/src/favicon.ico", "apps/poll-app/src/assets"],
+        "assets": [
+          "apps/poll-app/src/favicon.ico",
+          "apps/poll-app/src/assets",
+          {
+            "input": "libs/shared/feature/mailing/src/assets",
+            "glob": "**/*",
+            "output": "./assets"
+          },
+          {
+            "input": "libs/landing/src/lib/assets",
+            "glob": "**/*",
+            "output": "./assets"
+          }
+        ],
         "styles": [
           "apps/poll-app/src/styles.scss",
-        "libs/shared/ui/theme/root/styles/poll-custom-styles.scss"],
+          "libs/shared/ui/theme/root/styles/poll-custom-styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -65,10 +81,18 @@
     "test": {
       "executor": "@angular-devkit/build-angular:karma",
       "options": {
-        "polyfills": ["zone.js", "zone.js/testing"],
+        "polyfills": [
+          "zone.js",
+          "zone.js/testing"
+        ],
         "tsConfig": "apps/poll-app/tsconfig.spec.json",
-        "assets": ["apps/poll-app/src/favicon.ico", "apps/poll-app/src/assets"],
-        "styles": ["apps/poll-app/src/styles.css"],
+        "assets": [
+          "apps/poll-app/src/favicon.ico",
+          "apps/poll-app/src/assets"
+        ],
+        "styles": [
+          "apps/poll-app/src/styles.css"
+        ],
         "scripts": []
       }
     },
@@ -88,7 +112,9 @@
     },
     "build-storybook": {
       "executor": "@storybook/angular:build-storybook",
-      "outputs": ["{options.outputDir}"],
+      "outputs": [
+        "{options.outputDir}"
+      ],
       "options": {
         "outputDir": "dist/storybook/poll-app",
         "configDir": "apps/poll-app/.storybook",

@@ -1,0 +1,32 @@
+{
+  "name": "shared-mailing",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/feature/mailing/src",
+  "prefix": "lib",
+  "tags": ["feature"],
+  "projectType": "library",
+  "targets": {
+    "options": {
+      "assets": [
+        "libs/shared/feature/mailing/assets"
+      ]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/shared/feature/mailing/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/feature/mailing/**/*.ts",
+          "libs/shared/feature/mailing/**/*.html"
+        ]
+      }
+    }
+  }
+}

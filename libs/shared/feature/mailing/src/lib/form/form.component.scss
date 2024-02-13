@@ -1,0 +1,19 @@
+.form {
+  &__form {
+    &-email, &-submit {
+      width: 100%;
+    }
+
+    &-email-input, &-submit {
+      padding: var(--space-2xs);
+    }
+
+    &-legal {
+      margin-top: var(--space-xl);
+      font-size: var(--step--2);
+      line-height: var(--step--2);
+      font-style: italic;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@use '@angular/material' as mat;
+@import 'palettes';
+
+:root {
+  --poll-dark-background: #{map-get($poll-dark-background, background)};
+  --poll-dark-foreground: #{map-get($poll-dark-foreground, text)};
+  --poll-light-background: #{map-get($poll-light-background, background)};
+  --poll-light-foreground: #{map-get($poll-light-foreground, text)};
+
+  --poll-dark-primary: #{mat.get-color-from-palette($poll-dark-primary)};
+  --poll-dark-accent: #{mat.get-color-from-palette($poll-dark-accent)};
+  --poll-dark-warn: #{mat.get-color-from-palette($poll-dark-warn)};
+
+  --step--2: clamp(0.7038rem, 0.813rem + -0.1409vw, 0.7813rem);
+  --step--1: clamp(0.9375rem, 0.9375rem + 0vw, 0.9375rem);
+  --step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --step-1: clamp(1.35rem, 1.2206rem + 0.575vw, 1.6663rem);
+  --step-2: clamp(1.62rem, 1.374rem + 1.0932vw, 2.2213rem);
+  --step-3: clamp(1.9438rem, 1.5278rem + 1.8489vw, 2.9606rem);
+  --step-4: clamp(2.3325rem, 1.6721rem + 2.9352vw, 3.9469rem);
+  --step-5: clamp(2.7994rem, 1.7925rem + 4.475vw, 5.2606rem);
+
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+
+  --space-3xs-2xs: clamp(0.3125rem, 0.2038rem + 0.5435vw, 0.625rem);
+  --space-2xs-xs: clamp(0.5625rem, 0.4321rem + 0.6522vw, 0.9375rem);
+  --space-xs-s: clamp(0.875rem, 0.7446rem + 0.6522vw, 1.25rem);
+  --space-s-m: clamp(1.125rem, 0.8641rem + 1.3043vw, 1.875rem);
+  --space-m-l: clamp(1.6875rem, 1.4049rem + 1.413vw, 2.5rem);
+  --space-l-xl: clamp(2.25rem, 1.7283rem + 2.6087vw, 3.75rem);
+  --space-xl-2xl: clamp(3.375rem, 2.8098rem + 2.8261vw, 5rem);
+  --space-2xl-3xl: clamp(4.5rem, 3.4565rem + 5.2174vw, 7.5rem);
+  --space-s-l: clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem);
+}

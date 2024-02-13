@@ -1,8 +1,8 @@
 @use '@angular/material' as mat;
 
 $poll-dark-primary: mat.define-palette(mat.$orange-palette, 500, 300, 700);
-$poll-dark-accent: mat.define-palette(mat.$deep-orange-palette, 500, 300, 700);
-$poll-dark-warn: mat.define-palette(mat.$teal-palette, 500, 300, 700);
+$poll-dark-accent: mat.define-palette(mat.$teal-palette, 500, 300, 700);
+$poll-dark-warn: mat.define-palette(mat.$red-palette, 500, 300, 700);
 $poll-dark-background: (
   status-bar: mat.get-color-from-palette(mat.$grey-palette, 900),
   app-bar: mat.get-color-from-palette(mat.$grey-palette, 800),
@@ -23,8 +23,8 @@ $poll-dark-foreground: (
 );
 
 $poll-light-primary: mat.define-palette(mat.$orange-palette, 300);
-$poll-light-accent: mat.define-palette(mat.$deep-orange-palette, 300);
-$poll-light-warn: mat.define-palette(mat.$teal-palette, 400);
+$poll-light-accent: mat.define-palette(mat.$teal-palette, 300);
+$poll-light-warn: mat.define-palette(mat.$red-palette, 400);
 $poll-light-background: (
   status-bar: mat.get-color-from-palette(mat.$grey-palette, 200),
   app-bar: mat.get-color-from-palette(mat.$grey-palette, 100),

@@ -1,0 +1,16 @@
+header {
+  nav {
+    display: flex;
+
+    div[data-start] {
+      display: flex;
+      width: 50%;
+    }
+
+    div[data-end] {
+      display: flex;
+      width: 50%;
+      justify-content: end;
+    }
+  }
+}

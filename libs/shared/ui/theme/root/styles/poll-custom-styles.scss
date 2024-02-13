@@ -1,23 +1,38 @@
 @use '@angular/material' as mat;
 @import 'themes';
 @import 'typographies';
-@import 'colors';
+@import 'variables';
 
 @include mat.core();
 
 :root {
   @include mat.all-component-typographies($poll-typography-config);
+  .mat-typography p {
+    margin: revert;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
 }
 
 .dark-theme {
-  @include mat.all-component-themes($poll-dark-theme);
+  @include mat.all-component-colors($poll-dark-theme);
 
   background-color: var(--poll-dark-background);
   color: var(--poll-dark-foreground);
 }
 
 .light-theme {
-  @include mat.all-component-themes($poll-light-theme);
+  @include mat.all-component-colors($poll-light-theme);
 
   background-color: var(--poll-light-background);
   color: var(--poll-light-foreground);
@@ -30,3 +45,5 @@
     border-radius: 20px !important;
    }
  **/
+
+

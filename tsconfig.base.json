@@ -18,7 +18,14 @@
     "module": "ES2022",
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
-    "paths": {},
+    "paths": {
+      "@header": ["libs/header/src/index.ts"],
+      "@landing": ["libs/landing/src/index.ts"],
+      "@shared/data-access": ["libs/shared/data-access/src/index.ts"],
+      "@shared/mailing": ["libs/shared/feature/mailing/src/index.ts"],
+      "@shared/ui/components": ["libs/shared/ui/components/src/index.ts"],
+      "@shared/ui/styles": ["libs/shared/ui/theme/root/styles*"]
+    },
     "baseUrl": ".",
     "rootDir": ".",
     "skipLibCheck": true
