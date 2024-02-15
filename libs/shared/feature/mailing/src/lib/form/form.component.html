@@ -10,6 +10,7 @@
       class="form__form-email-input"
       matInput
       formControlName="email"
+      autocomplete="email"
     />
     <mat-error>
       @if (mailingForm.get('email')?.hasError('required')) {
