@@ -22,13 +22,13 @@
       }
 
       &-cta-button {
-        font-size: var(--step--1);
-        line-height: var(--step--1);
-        padding: var(--space-s)
+        font-size: var(--step-0);
+        line-height: var(--step-0);
+        padding: var(--space-m)
       }
 
       &-cta {
-        max-width: 90%;
+        max-width: 100%;
       }
     }
 
@@ -39,7 +39,7 @@
       }
 
       &-list {
-        gap: var(--space-m);
+        gap: var(--space-l-xl);
       }
 
       &-list li {
@@ -54,7 +54,12 @@
       }
 
       &-banner-img {
-        max-width: 80%;
+        max-width: 65%;
+      }
+
+      &-disclaimer {
+        flex-direction: column;
+        gap: var(--space-xl);
       }
     }
   }

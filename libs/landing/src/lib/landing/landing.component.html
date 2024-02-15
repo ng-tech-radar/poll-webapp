@@ -1,4 +1,4 @@
-<section class="landing__home">
+<section class="landing__home" data-aos="fade-in" data-aos-duration="800">
   <img
     class="landing__home-banner"
     ngSrc="../assets/welcome-banner.png"
@@ -7,7 +7,6 @@
     height="600"
     priority=""
   />
-
   <main class="landing__home-cta">
     <h1 class="page-title">#ngTechRadar</h1>
     <h2 class="page-subtitle">
@@ -30,20 +29,20 @@
           color="primary"
           (click)="scrollTo(mailing)"
         >
-          Contribute now
+          Participate
         </button>
       </div>
     </div>
   </main>
 </section>
-<section class="landing__about" #about>
+<section class="landing__about" #about data-aos="zoom-in">
   <h2 class="page-title">How it <span class="emphasized">works</span></h2>
   <div class="landing__about-split">
     <img
       class="landing__about-banner-img"
       ngSrc="assets/radar-split.png"
-      width="500"
-      height="500"
+      width="400"
+      height="400"
       alt="Typical tech radar interests split adjusted for Angular Tech Radar"
     />
     <!--  <span class="landing__about-dot" style="">State management</span>-->
@@ -51,15 +50,15 @@
     <!--  <span class="landing__about-dot" style="">SPA</span>-->
     <!--  <span class="landing__about-dot" style="">Mobile</span>-->
     <ul class="landing__about-list">
-      <li>
+      <li data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <mat-icon color="accent">interpreter_mode</mat-icon>
         <span> You tell us about your project work </span>
       </li>
-      <li>
+      <li data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <mat-icon color="accent">assignment_add</mat-icon>
         <span>We collect & prepare the data</span>
       </li>
-      <li>
+      <li data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <mat-icon color="accent">query_stats</mat-icon>
         <span>Entire community &rArr; profit</span>
       </li>
@@ -67,9 +66,36 @@
   </div>
 </section>
 
-<section class="landing__mailing" #mailing>
+<section class="landing__about-disclaimer">
+  <div
+    class="landing__about-disclaimer-point"
+    data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom"
+  >
+    <p>No company behind</p>
+    <img ngSrc="assets/no-company.png" height="200" width="200" alt="" />
+  </div>
+  <div
+    class="landing__about-disclaimer-point"
+    data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom"
+  >
+    <p>Non-commercial</p>
+    <img ngSrc="assets/non-commercial.png" height="200" width="200" alt="" />
+  </div>
+  <div
+    class="landing__about-disclaimer-point"
+    data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom"
+  >
+    <p>For the community</p>
+    <img ngSrc="assets/for-the-community.png" height="200" width="200" alt="" />
+  </div>
+</section>
+
+<section class="landing__mailing" #mailing data-aos="zoom-in">
   <h2 class="page-title">
-    Join <span class="emphasized">Angular Tech Radar</span>
+    Go in for <span class="emphasized">Angular Tech Radar</span>
   </h2>
   <sh-mailing></sh-mailing>
 </section>

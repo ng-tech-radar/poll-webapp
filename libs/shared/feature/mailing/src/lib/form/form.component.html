@@ -1,17 +1,36 @@
- <form id="newsletter" class="form" [formGroup]="mailingForm">
-    <mat-form-field class="form__form-email" color="primary" appearance="outline" hideRequiredMarker="true" >
-      <input class="form__form-email-input" matInput formControlName="email" type="email"/>
-      <mat-label>Email</mat-label>
-      <mat-error>
-        @if(mailingForm.get('email')?.hasError('required')) {
-          <small>Email cannot be empty</small>
-        }
-        @if (mailingForm.get('email')?.hasError('email')) {
-          <small>Incorrect email format</small>
-        }
-      </mat-error>
-    </mat-form-field>
-    <button class="form__form-submit" mat-stroked-button color="primary" (click)="subscribe()">Subscribe</button>
-    <p class="form__form-legal">By subscribing you give us a consent to use the email for contact and marketing purposes. You can unsubscribe at any moment using the unsubscribe button in the emails we send.</p>
-  </form>
-
+<form id="newsletter" class="form" [formGroup]="mailingForm">
+  <mat-form-field
+    class="form__form-email"
+    color="primary"
+    appearance="outline"
+    hideRequiredMarker="true"
+  >
+    <input
+      id="email"
+      class="form__form-email-input"
+      matInput
+      formControlName="email"
+    />
+    <mat-error>
+      @if (mailingForm.get('email')?.hasError('required')) {
+      <small>Email cannot be empty</small>
+      } @if (mailingForm.get('email')?.hasError('email')) {
+      <small>Incorrect email format</small>
+      }
+    </mat-error>
+    <mat-label>Email</mat-label>
+  </mat-form-field>
+  <button
+    class="form__form-submit"
+    mat-stroked-button
+    color="primary"
+    (click)="subscribe()"
+  >
+    Subscribe
+  </button>
+  <p class="form__form-legal">
+    By subscribing you give us a consent to use the email for contact and
+    marketing purposes. You can unsubscribe at any moment using the unsubscribe
+    button in the emails we send.
+  </p>
+</form>

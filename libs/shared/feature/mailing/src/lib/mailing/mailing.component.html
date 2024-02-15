@@ -1,14 +1,21 @@
 <div class="mailing">
-  <img class="mailing__banner" ngSrc="assets/get-notified.png" width="600" height="400" alt="An envelope with a notification" />
+  <img
+    class="mailing__banner"
+    ngSrc="assets/get-notified.png"
+    width="600"
+    height="400"
+    alt="An envelope with a notification"
+  />
   @if (submitted) {
-    <p class="mailing__thank-you-msg" [@showQuick]="submitted ? 'in' : ''">Thank you for your trust!
+  <div class="mailing__thank-you-inbox" [@showSlow]="submitted ? 'in' : ''">
+    <div class="mailing__thank-you-msg" [@showQuick]="submitted ? 'in' : ''">
+      <p>Thank you for the trust!&nbsp;</p>
       <mat-icon color="accent">favorite</mat-icon>
-    </p>
-    <p class="mailing__thank-you-inbox" [@showSlow]="submitted ? 'in' : ''">
-     <mat-icon color="accent">email</mat-icon>A welcome email is waiting for you - check your inbox
-    </p>
+    </div>
+    <p>The welcome email is waiting for you - check your inbox</p>
+  </div>
   } @else {
-    <h3 class="mailing__header">Get notified about Tech Radar updates 🚀</h3>
-    <sh-mailing-form (submitted)="submit($event)"></sh-mailing-form>
+  <h3 class="mailing__header">Get notified about updates 🚀</h3>
+  <sh-mailing-form (submitted)="submit($event)"></sh-mailing-form>
   }
 </div>

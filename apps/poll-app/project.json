@@ -32,9 +32,12 @@
         ],
         "styles": [
           "apps/poll-app/src/styles.scss",
-          "libs/shared/ui/theme/root/styles/poll-custom-styles.scss"
+          "libs/shared/ui/theme/root/styles/poll-custom-styles.scss",
+          "./node_modules/aos/dist/aos.css"
         ],
-        "scripts": []
+        "scripts": [
+          "./node_modules/aos/dist/aos.js"
+        ]
       },
       "configurations": {
         "production": {

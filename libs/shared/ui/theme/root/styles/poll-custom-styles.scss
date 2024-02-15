@@ -7,6 +7,7 @@
 
 :root {
   @include mat.all-component-typographies($poll-typography-config);
+
   .mat-typography p {
     margin: revert;
   }
@@ -26,13 +27,15 @@ a {
 
 .dark-theme {
   @include mat.all-component-colors($poll-dark-theme);
-
+  @include mat.all-component-densities($poll-dark-theme);
+  
   background-color: var(--poll-dark-background);
   color: var(--poll-dark-foreground);
 }
 
 .light-theme {
   @include mat.all-component-colors($poll-light-theme);
+  @include mat.all-component-densities($poll-light-theme);
 
   background-color: var(--poll-light-background);
   color: var(--poll-light-foreground);
