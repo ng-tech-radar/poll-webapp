@@ -17,6 +17,7 @@
         ],
         "tsConfig": "apps/poll-app/tsconfig.app.json",
         "assets": [
+          "apps/poll-app/src/robots.txt",
           "apps/poll-app/src/favicon.ico",
           "apps/poll-app/src/assets",
           {
