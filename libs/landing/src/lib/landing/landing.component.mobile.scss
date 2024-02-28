@@ -59,8 +59,14 @@
 
       &-disclaimer {
         flex-direction: column;
+        align-items: center;
         gap: var(--space-xl);
       }
+    }
+
+    &__promo-video {
+      width: 300px;
+      height: 200px;
     }
   }
 }
